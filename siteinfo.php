@@ -42,7 +42,7 @@
  Plugin Name: SiteInfo
  Plugin URI: http://www.arnebrachhold.de/redir/siteinfo-home/
  Description: This plugin will generate an A9 compatible SiteInfo file for your WordPress blog.
- Version: 1.1
+ Version: 1.2
  Author: Arne Brachhold
  Author URI: http://www.arnebrachhold.de/
   
@@ -51,6 +51,7 @@
  ==============================================================================
  2006-06-19     1.0     First release                       
  2006-06-20     1.1     Addes Recent Posts, added fix for empty page titles
+ 2006-06-21     1.2     Fixed incorrect encodings, added missing translations, corrected date on admin page
 
 
  Todo /  Known Problems:
@@ -108,7 +109,7 @@ if(!class_exists('SiteInfoGenerator')) {
 		* @var string Version of the generator
 		* @access private
 		*/
-		var $_version = '1.1';
+		var $_version = '1.2';
 		
 		/**
 		* @var bool True if iniated (loaded, configured)
@@ -599,6 +600,19 @@ if(!class_exists('SiteInfoGenerator')) {
 		
 		#region SiteInfo Generator
 		/**
+		* Converts text to an valid xml value
+		*
+		* @since 1.2
+		* @access private
+		* @author Arne Brachhold <himself [at] arnebrachhold [dot] de>
+		* @param $text string The text
+		* @return string The encoded value
+		*/
+		function EncodeText($text) {
+			return ent2ncr(convert_chars(strip_tags($text)));
+		}
+		
+		/**
 		* Generates the SiteInfo content
 		*
 		* @since 1.0
@@ -614,7 +628,7 @@ if(!class_exists('SiteInfoGenerator')) {
 			
 			$s .='<!-- generator="wordpress/' . get_bloginfo_rss('version') . '" -->' . "\n";
 			$s .='<!-- generator-url="http://www.arnebrachhold.de" siteinfo-generator-version="' . $this->GetVersion() . '" -->' . "\n";
-			$s .='<!-- generated-on="' . date(get_option('date_format') . ' ' . get_option('time_format')) . '"-->' . "\n";
+			$s .='<!-- generated-on="' . $this->EncodeText(date(get_option('date_format') . ' ' . get_option('time_format'))) . '"-->' . "\n";
 			
 				
 			$s .='<webmenu>';
@@ -626,7 +640,7 @@ if(!class_exists('SiteInfoGenerator')) {
 			//Homepage
 			if($this->GetOption('include_home')) {
 				$s .='<item>';
-				$s .='<text>' . __('Home') . '</text>';
+				$s .='<text>' . $this->EncodeText(__('Home','siteinfo')) . '</text>';
 				$s .='<url>' . get_bloginfo_rss('home') . '</url>';
 				$s .='</item>';
 			}
@@ -634,8 +648,8 @@ if(!class_exists('SiteInfoGenerator')) {
 			//Search
 			if($this->GetOption('include_search')) {
 				$s .='<item>';
-				$s .='<text>' . __('Search') . '</text>';
-				$s .='<textSearch>' . __('Search for [[:SEARCHTERMS:]]') . '</textSearch>';
+				$s .='<text>' . $this->EncodeText(__('Search','siteinfo')) . '</text>';
+				$s .='<textSearch>' . $this->EncodeText(__('Search for [[:SEARCHTERMS:]]','siteinfo')) . '</textSearch>';
 				$s .='<urlSearch>' . get_bloginfo_rss('home') . '?s=[[:SEARCHTERMS:]]</urlSearch>';
 				$s .='</item>';
 			}
@@ -647,7 +661,7 @@ if(!class_exists('SiteInfoGenerator')) {
 					$s.='<separator />';
 					for($i=0; $i<count($pages); $i++) {
 						$page = &$pages[$i];
-						$title = trim(convert_chars(strip_tags($page->post_title)));
+						$title = $this->EncodeText($page->post_title);
 						if(empty($title)) continue;
 						$s .='<item>';
 						$s .='<text>' . $title  .'</text>';
@@ -672,17 +686,17 @@ if(!class_exists('SiteInfoGenerator')) {
 			if($this->GetOption('include_recentposts')) {
 				query_posts('showposts=10'); 
 				$s.='<item>';
-       			$s.='<text>' . __('Recent Posts') . '</text>';
+       			$s.='<text>' . $this->EncodeText(__('Recent Posts','siteinfo')) . '</text>';
 				$s.='<menu>';
 				global $post;
 				while (have_posts()) {
 					the_post();
-					$title = trim(convert_chars(strip_tags($post->post_title)));
+					$title = $this->EncodeText($post->post_title);
 					
 					if(empty($title)) continue;
 					$s .='<item>';
 					$s .='<text>' . $title  .'</text>';
-					$s .='<url>' . get_permalink($post->id) . '</url>';
+					$s .='<url>' . get_permalink($post->ID) . '</url>';
 					$s .='</item>';									
 				}
 				$s.='</menu>';
@@ -692,12 +706,12 @@ if(!class_exists('SiteInfoGenerator')) {
 			if($catsRes) {
 				
 				$s.='<item>';
-       			$s.='<text>' . __('Categories') . '</text>';
+       			$s.='<text>' . $this->EncodeText(__('Categories','siteinfo')) . '</text>';
 				$s.='<menu>';
 				foreach($catsRes as $cat) {
 					if($cat && $cat->ID && $cat->ID>0) {
 						$s .='<item>';
-						$s .='<text>' . convert_chars(strip_tags($cat->cat_name))  .'</text>';
+						$s .='<text>' . $this->EncodeText($cat->cat_name)  .'</text>';
 						$s .='<url>' . get_category_link($cat->ID) . '</url>';
 						$s .='</item>';
 					}
@@ -710,7 +724,7 @@ if(!class_exists('SiteInfoGenerator')) {
 				global $month;
 				
 				$s.='<item>';
-       			$s.='<text>' . __('Archives') . '</text>';
+       			$s.='<text>' . $this->EncodeText(__('Archives','siteinfo')) . '</text>';
 				$s.='<menu>';
 				$cYear='';
 				$count = count($arcresults);
@@ -718,13 +732,12 @@ if(!class_exists('SiteInfoGenerator')) {
 					$arcresult = $arcresults[$i];
 					if($i==0 || $arcresult->year != $arcresults[$i-1]->year) {
 						$s .='<item>';
-						$s .='<text>' . convert_chars(strip_tags($arcresult->year))  .'</text>';
-						//$s .='</item>';
+						$s .='<text>' . $this->EncodeText($arcresult->year)  .'</text>';
 						$s.='<menu>';						
 					}					
 					$url  = get_month_link($arcresult->year,   $arcresult->month);
 					$s .='<item>';
-					$s .='<text>' . convert_chars(strip_tags(sprintf('%s %d', $month[zeroise($arcresult->month,2)], $arcresult->year)))  .'</text>';
+					$s .='<text>' . $this->EncodeText(sprintf('%s %d', $month[zeroise($arcresult->month,2)], $arcresult->year))  .'</text>';
 					$s .='<url>' . $url . '</url>';
 					$s .='</item>';
 					
@@ -736,8 +749,6 @@ if(!class_exists('SiteInfoGenerator')) {
 				$s.='</menu>';
 				$s.='</item>';
 			}
-			
-
 			
 			$s .='</menu>';
 			$s .= '</webmenu>';
@@ -849,6 +860,7 @@ if(!class_exists('SiteInfoGenerator')) {
 		* @return string The HTML
 		*/
 		function HtmlShowOptionsPage() {
+			global $wp_version;
 			$this->Initate();
 			
 		
@@ -1014,7 +1026,13 @@ if(!class_exists('SiteInfoGenerator')) {
 											echo "<li>" . str_replace("%s",$this->GetSiteInfoPath(),__('The path to your SiteInfo file is %s','siteinfo')) . "</li>";
 											if(file_exists($this->GetSiteInfoPath())) {
 												$mtime = filemtime($this->GetSiteInfoPath());
-												echo "<li>" . str_replace("%s",'<b>' . date(get_option("date_format") . '</b>',$mtime),__('Your SiteInfo was rebuilt on %s','siteinfo')) . "</li>";	
+												$date = '';
+												
+												//Workaround for http://trac.wordpress.org/ticket/2774
+												if(version_compare(PHP_VERSION, '4.3', '<')===true && $wp_version=='2.0.3') $date = date(get_option('date_format'),$mtime);
+												else $date = date_i18n(get_option('date_format'),$mtime);
+												
+												echo "<li>" . str_replace("%s",'<b>' . $date . '</b>',__('Your SiteInfo was rebuilt on %s','siteinfo')) . "</li>";	
 											} 
 											echo "<li>" . __('File status:','siteinfo') . ' ' . $this->ValidatePath(dirname($this->GetSiteInfoPath())) . "</li>";
 										} else {
@@ -1105,10 +1123,9 @@ if(!class_exists('SiteInfoGenerator')) {
 	#region Embedded resources and scripts
 	if((isset($_GET['res']) && !empty($_GET['res']) || isset($_POST['res']) && !empty($_POST['res']))) {
 		
-
 		
 		//AJAX Directory Check
-		if($_POST['res']=='{2FECC637-A2FE-4a1e-8967-ABC331223EA6}' || $_POST['res']=='{56238D44-EC70-4c46-BDCE-466D3D724ADF}') {
+		if(!empty($_POST['res']) && ($_POST['res']=='{2FECC637-A2FE-4a1e-8967-ABC331223EA6}' || $_POST['res']=='{56238D44-EC70-4c46-BDCE-466D3D724ADF}')) {
 			
 			//2.0.3 introduced check_ajax_referer()
 			if(version_compare($wp_version,'2.0.3','>=')!==true) {
