@@ -1,0 +1,311 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SiteInfo Generator for WordPress\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2006-06-19 20:53+0100\n"
+"Last-Translator: Arne Brachhold <himself [at] arnebrachhold [dot] de>\n"
+"Language-Team: Arne Brachhold\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+# siteinfo.php:522
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:540
+msgid "<b>Error</b>: The path to your SiteInfo file was not found."
+msgstr "<b>Fehler</b>: Der Pfad zur SiteInfo Datei wurde nicht gefunden."
+
+# siteinfo.php:527
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:547
+msgid "OK, path found, siteinfo.xml exists and is writable."
+msgstr "OK, Pfad wurde gefunden und die Datei siteinfo.xml ist beschreibbar."
+
+# siteinfo.php:529
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:550
+msgid "<b>Error</b>, path found, siteinfo.xml exists but is not writable. Please make it writable using CHMOD 777."
+msgstr "<b>Fehler</b>, der Pfad wurde gefunden, die siteinfo.xml Datei exisitiert aber ist nicht schreibbar. Bitte machen Sie die Datei schreibbar, in dem Sie per FTP oder SSH das Kommando CHMOD 777 ausführen."
+
+# siteinfo.php:533
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:555
+msgid "OK, path found, siteinfo.xml doesn't exist but the directory is writable so WordPress is able to create a new one."
+msgstr "OK, der Pfad wurde gefundem, die Datei siteinfo.xml existiert noch nicht aber da das Verzeichnis beschreibbar ist kann diese automatisch angegelgt werden."
+
+# siteinfo.php:535
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:558
+msgid "<b>Error</b>, path found, siteinfo.xml doesn't exist and the directory is not writable so WordPress is NOT able to create a new one. Please crate a file named siteinfo.xml and make it writable using CHMOD 777."
+msgstr "<b>Fehler</b>, der Pfad wurde zwar gefundem, aber die Datei siteinfo.xml exisitert bisher nicht. Da das Verzeichnis nicht beschreibbar ist, kann diese nicht automatisch angelegt werden. Bitte erstellen Sie eine neue Datei names siteinfo.xml und machen Sie diese per FTP oder SSH mit dem Kommando CHMOD 777 beschreibbar."
+
+# C:\Programme\Apache
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:625
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1041
+msgid "Home"
+msgstr "Startseite"
+
+# C:\Programme\Apache
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:633
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1042
+msgid "Search"
+msgstr "Suche"
+
+# C:\Programme\Apache
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:634
+msgid "Search for [[:SEARCHTERMS:]]"
+msgstr "Suche nach  [[:SEARCHTERMS:]]"
+
+# siteinfo.php:643
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:669
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1044
+msgid "Categories"
+msgstr "Kategorien"
+
+# siteinfo.php:624
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:687
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1045
+msgid "Archives"
+msgstr "Archive"
+
+# siteinfo.php:674
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:733
+msgid "SiteInfo Generator"
+msgstr "SiteInfo Generator"
+
+# siteinfo.php:674
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:733
+msgid "SiteInfo"
+msgstr "SiteInfo"
+
+# siteinfo.php:749
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:838
+msgid "Your blog is not installed in the top level of your domain. Please verify the path to your domain root below and enable the plugin."
+msgstr "Ihr Blog ist nicht im Stammverzeichnis der Domain installiert. Bitte überprüfen Sie den unten angegebenen Pfad und korrigieren Sie ihn falls nötig."
+
+# siteinfo.php:752
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:841
+msgid "It looks like your server doesn't support mod_rewrite, so we need to create a static file. Please verify the path to your blog directory below."
+msgstr "Es sieht so aus als würde Ihr Webserver mod_rewrite nicht unterstützten, daher muss eine statische Datei generiert werden. Bitte überprüfen Sie den unten angebeben Pfad zu Ihrem Blog Verzeichnis."
+
+# siteinfo.php:754
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:843
+#, php-format
+msgid "Please <a href=\"%s\">update your permalink structure</a> after activating this plugin!"
+msgstr "Bitte <a href=\"%s\">aktualisieren Sie Ihre Permalink Struktur</a> nach dem Sie dieses Plugin aktiviert haben!"
+
+# siteinfo.php:760
+# siteinfo.php:782
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:848
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:871
+msgid "Hide this notice"
+msgstr "Hinweis ausblenden"
+
+# siteinfo.php:782
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:871
+msgid "Thank you very much for the donation. You help me to continue support and development of this plugin and other free software!"
+msgstr "Vielen Dank für Ihre Spende! Sie helfen mir die Entwicklung und Unterstützung dieses Plugins und anderer kostenloses Software fortzuführen."
+
+# siteinfo.php:754
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:912
+#, php-format
+msgid "Please <a href=\"%s\">update your permalink structure</a> after activating mod_rewite!"
+msgstr "Bitte <a href=\"%s\">aktualisieren Sie Ihre Permalink Struktur</a> nach dem Sie mod_rewrite aktiviert haben!"
+
+# siteinfo.php:811
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:928
+msgid "SiteInfo for WordPress"
+msgstr "SiteInfo für WordPress"
+
+# siteinfo.php:921
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:940
+msgid "Plugin Info"
+msgstr "Plugin Info"
+
+# siteinfo.php:922
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:942
+msgid "Author Website"
+msgstr "Autoren Website"
+
+# siteinfo.php:923
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:943
+msgid "Plugin Homepage"
+msgstr "Plugin Homepage"
+
+# siteinfo.php:924
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:944
+msgid "Support Forum"
+msgstr "Hilfe Forum"
+
+# siteinfo.php:925
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:945
+msgid "Report Bug"
+msgstr "Fehler melden"
+
+# siteinfo.php:928
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:949
+msgid "SiteInfo Resources:"
+msgstr "SiteInfo Links"
+
+# siteinfo.php:929
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:951
+msgid "A9 Developer Blog"
+msgstr "A9 Entwickler Blog"
+
+# siteinfo.php:930
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:952
+msgid "A9 SiteInfo Website"
+msgstr "A9 SiteInfo Website"
+
+# siteinfo.php:811
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:954
+msgid "SiteInfo for Firefox"
+msgstr "SiteInfo für FireFox"
+
+# siteinfo.php:935
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:955
+msgid "Full A9 Toolbar"
+msgstr "Kompl. A9 Toolbar"
+
+# siteinfo.php:936
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:959
+msgid "Donations:"
+msgstr "Spenden:"
+
+# siteinfo.php:760
+# siteinfo.php:782
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:965
+msgid "Hide this list"
+msgstr "Diese Liste ausblenden"
+
+# siteinfo.php:888
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:975
+msgid "Status"
+msgstr "Status"
+
+# siteinfo.php:898
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:980
+msgid "The plugin is using <b>mod_rewrite</b>"
+msgstr "Das Plugin verwendet <b>mod_rewrite</b>"
+
+# siteinfo.php:899
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:981
+msgid "The plugin is using <b>a static file</b>"
+msgstr "Das Plugin verwendet <b>eine statische Datei</b>"
+
+# siteinfo.php:901
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:983
+#, php-format
+msgid "The URL of your SiteInfo file is %s"
+msgstr "Die URL zu Ihrer SiteInfo Datei lautet %s"
+
+# siteinfo.php:904
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:986
+#, php-format
+msgid "The path to your SiteInfo file is %s"
+msgstr "Der Pfad zu Ihrer SiteInfo Datei lautet %s"
+
+# siteinfo.php:907
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:989
+#, php-format
+msgid "Your SiteInfo was rebuilt on %s"
+msgstr "Ihre SiteInfo Datei wurde zuletzt erstellt am %s"
+
+# siteinfo.php:909
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:991
+msgid "File status:"
+msgstr "Datei Status:"
+
+# siteinfo.php:912
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:994
+#, php-format
+msgid "Please delete the <abbr title=\"%s\">"
+msgstr "Bitte löschen Sie die Datei <abbr title=\"%s\">"
+
+# siteinfo.php:912
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:994
+msgid "</abbr> file if you want to use mod_rewrite."
+msgstr "</abbr> wenn Sie mod_rewrite verwenden möchten."
+
+# siteinfo.php:966
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1004
+msgid "Basic Options"
+msgstr "Standard Einstellungen"
+
+# siteinfo.php:980
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1009
+msgid "Full path to the domain root"
+msgstr "Kompletter Pfad zum Domain Stammverzeichnis:"
+
+# siteinfo.php:980
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1009
+msgid "Verify path"
+msgstr "Pfad überprüfen"
+
+# siteinfo.php:980
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1009
+msgid "Autodetect"
+msgstr "Automatisch erkennen"
+
+# siteinfo.php:981
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1010
+msgid "Full URL to the domain root"
+msgstr "Komplette URL zu Ihrem Domain Stammverzeichnis:"
+
+# siteinfo.php:752
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1016
+msgid "Your server does not support mod_rewrite so this plugin will generate a static file every time you publish a post. Please specify the path to your domain root below."
+msgstr "Da Ihr Server mod_rewrite nicht unterstützt wird dieses Plugin jedes mal wenn Sie einen Beitrag veröffentlichen eine statische SiteInfo Datei erstellen. Bitte überprüfen Sie den hier angegebenen Pfad zum Domain Stammverzeichnis."
+
+# C:\Programme\Apache
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1018
+msgid "Your blog is not located in your domain root so this plugin will generate a static file every time you publish a post. Please specify the path to your domain root below."
+msgstr "Da Ihr Blog nicht im Stammverzeichnis dieser Domain liegt wird dieses Plugin jedes mal wenn Sie einen Beitrag veröffentlichen eine statische SiteInfo Datei erstellen. Bitte überprüfen Sie den hier angegebenen Pfad zum Domain Stammverzeichnis."
+
+# siteinfo.php:975
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1023
+msgid "Use mod_rewrite to generate the SiteInfo file"
+msgstr "Mod_rewrite benutzen um die SiteInfo zu generieren"
+
+# C:\Programme\Apache
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1035
+msgid "WebMenu Content"
+msgstr "Inhalt des WebMenu"
+
+# C:\Programme\Apache
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1038
+msgid "Please choose what you want to include in your WebMenu. <b>Note that you need to close and reopen your browser to see the changes because the A9 Toolbar reads the file only once per session.</b>"
+msgstr "Bitte wählen Sie welche Einträge im WebMenü aufgeführt werden sollen. <b>Bitte beachten Sie dass Sie Ihren Browser schließen und neu öffnen müssen um die Änderungen zu sehen da die A9 Toolbar die Daten nur einmal pro Sitzung abruft.</b>"
+
+# C:\Programme\Apache
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1043
+msgid "Pages"
+msgstr "Zusätzliche Seiten"
+
+# siteinfo.php:987
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1052
+msgid "Update options"
+msgstr "Optionen speichern"
+
+# siteinfo.php:826
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1168
+msgid "Sending Data..."
+msgstr "Sende Daten..."
+
+# siteinfo.php:831
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1173
+msgid "Data Sent..."
+msgstr "Daten gesendet..."
+
+# siteinfo.php:836
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1178
+msgid "Processing Request..."
+msgstr "Verarbeite Anforderung...."
+
+# C:\Programme\Apache
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1199
+msgid "Done."
+msgstr "Fertig."
+
+# siteinfo.php:873
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1211
+msgid "Empty directory"
+msgstr "Leeres Verzeichnis"
+
