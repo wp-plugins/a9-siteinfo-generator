@@ -3,6 +3,7 @@ Contributors: arnee
 Donate link: http://www.arnebrachhold.de/redir/paypal
 Tags: a9, siteinfo, xml
 Requires at least: 2.0.3
+Stable tag: 1.2
 
 This plugin will create a SiteInfo menu for your blog.
 
