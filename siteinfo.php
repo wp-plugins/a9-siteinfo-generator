@@ -1,7 +1,7 @@
 <?php 
 /*
  
- $Id: siteinfo.php $
+ $Id: siteinfo.php 5432 2006-03-01 17:48:34Z arnee $
 
  SiteInfo Generator for WordPress
  ==============================================================================
@@ -12,8 +12,6 @@
  The A9 SiteInfo Website:	http://a9.com/-/company/help/siteinfo/
  
  Feel free to visit my website under www.arnebrachhold.de!
- 
- Thanks to Christian Heindel (www.christian-heindel.de) for testing!
  
  Have fun! 
    Arne
@@ -31,10 +29,10 @@
  If your Blog is NOT located in the root directory (like www.mydomain.com/blog/) or your server doesn't support mod_rewrite:
 
    1. Upload the plugin into your wp-content/plugins directory
-   2. Create a new file named "siteinfo.xml" in your domain root directory (like www.mydomain.com/siteinfo.xml).
+   2. Create a new file named “siteinfo.xml” in your domain root directory (like www.mydomain.com/siteinfo.xml).
    3. Make it writable using FTP or SSH and the CHMOD 777 command. The WordPress Codex has additional information about that.
    4. Activate the plugin
-   5. Go into "Options" -> "SiteInfo" and verify if the file system path to the siteinfo.xml is correct.
+   5. Go into "Options" -> "SiteInfo" and verify if the filesystem path to the siteinfo.xml is correct.
 
 
  Info for WordPress:
@@ -42,14 +40,14 @@
  Plugin Name: SiteInfo
  Plugin URI: http://www.arnebrachhold.de/redir/siteinfo-home/
  Description: This plugin will generate an A9 compatible SiteInfo file for your WordPress blog.
- Version: 1.0
+ Version: 1.0b
  Author: Arne Brachhold
  Author URI: http://www.arnebrachhold.de/
   
  
  Release History:
  ==============================================================================
- 2006-06-19     1.0     First release                       
+ 2005-06-05     1.0     First release                       
 
 
  Todo /  Known Problems:
@@ -87,7 +85,7 @@
  I'm very open to any discussion or criticism regarding this format of licensing.  
 
  This software is provided "as is", without any guarantee of warranty of any kind, 
- nor could I ever be held liable for any damages it could do to your system.
+ nor could I ever be held liable for any damages it could do to your system
 
 */
 
@@ -95,7 +93,7 @@
 //error_reporting(E_ALL);
 //ini_set("display_errors",1);
 
-define('SIG_OPTIONS_NAME','SIG_OPTIONS_ARRAY');
+define('SIG_OPTIONS_NAME','SIG_STANDARD_OPTIONS_1');
 define('SIG_SINGLETON_NAME','SIG_INSTANCE');
 define('SIG_FILE_NAME','siteinfo.xml');
 
@@ -1037,7 +1035,7 @@ if(!class_exists('SiteInfoGenerator')) {
 								<h3 class="dbx-handle"><?php _e('WebMenu Content', 'siteinfo') ?></h3>
 								<div class="dbx-content">
 									
-									<p><?php _e('Please choose what you want to include in your WebMenu. <b>Note that you need to close and reopen your browser to see the changes because the A9 Toolbar reads the file only once per session.</b>', 'siteinfo') ?></p>
+									<p><?php _e('Please choose what you want to include in your WebMenu:', 'siteinfo') ?></p>
 									<ul>
 										<?php 
 										echo $this->HtmlGetCheckBox('sig_include_home',$this->GetOption('include_home'),__('Home', 'siteinfo'));

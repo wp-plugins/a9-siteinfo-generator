@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SiteInfo Generator for WordPress\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2006-06-19 20:50+0100\n"
+"PO-Revision-Date: 2006-06-19 17:28+0100\n"
 "Last-Translator: Arne Brachhold <himself [at] arnebrachhold [dot] de>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -15,299 +15,299 @@ msgstr ""
 "X-Poedit-SearchPath-0: C:\\Programme\\Apache Group\\Apache2\\htdocs\\wp_svn\\wp-content\\plugins\\siteinfo\n"
 
 # siteinfo.php:522
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:540
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:536
 msgid "<b>Error</b>: The path to your SiteInfo file was not found."
 msgstr ""
 
 # siteinfo.php:527
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:547
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:543
 msgid "OK, path found, siteinfo.xml exists and is writable."
 msgstr ""
 
 # siteinfo.php:529
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:550
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:546
 msgid "<b>Error</b>, path found, siteinfo.xml exists but is not writable. Please make it writable using CHMOD 777."
 msgstr ""
 
 # siteinfo.php:533
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:555
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:551
 msgid "OK, path found, siteinfo.xml doesn't exist but the directory is writable so WordPress is able to create a new one."
 msgstr ""
 
 # siteinfo.php:535
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:558
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:554
 msgid "<b>Error</b>, path found, siteinfo.xml doesn't exist and the directory is not writable so WordPress is NOT able to create a new one. Please crate a file named siteinfo.xml and make it writable using CHMOD 777."
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:625
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1041
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:621
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1037
 msgid "Home"
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:633
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1042
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:629
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1038
 msgid "Search"
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:634
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:630
 msgid "Search for [[:SEARCHTERMS:]]"
 msgstr ""
 
 # siteinfo.php:643
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:669
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1044
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:665
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1040
 msgid "Categories"
 msgstr ""
 
 # siteinfo.php:624
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:687
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1045
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:683
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1041
 msgid "Archives"
 msgstr ""
 
 # siteinfo.php:674
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:733
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:729
 msgid "SiteInfo Generator"
 msgstr ""
 
 # siteinfo.php:674
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:733
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:729
 msgid "SiteInfo"
 msgstr ""
 
 # siteinfo.php:749
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:838
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:834
 msgid "Your blog is not installed in the top level of your domain. Please verify the path to your domain root below and enable the plugin."
 msgstr ""
 
 # siteinfo.php:752
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:841
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:837
 msgid "It looks like your server doesn't support mod_rewrite, so we need to create a static file. Please verify the path to your blog directory below."
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:843
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:839
 #, php-format
 msgid "Please <a href=\"%s\">update your permalink structure</a> after activating this plugin!"
 msgstr ""
 
 # siteinfo.php:760
 # siteinfo.php:782
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:848
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:871
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:844
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:867
 msgid "Hide this notice"
 msgstr ""
 
 # siteinfo.php:782
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:871
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:867
 msgid "Thank you very much for the donation. You help me to continue support and development of this plugin and other free software!"
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:912
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:908
 #, php-format
 msgid "Please <a href=\"%s\">update your permalink structure</a> after activating mod_rewite!"
 msgstr ""
 
 # siteinfo.php:811
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:928
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:924
 msgid "SiteInfo for WordPress"
 msgstr ""
 
 # siteinfo.php:921
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:940
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:936
 msgid "Plugin Info"
 msgstr ""
 
 # siteinfo.php:922
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:942
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:938
 msgid "Author Website"
 msgstr ""
 
 # siteinfo.php:923
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:943
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:939
 msgid "Plugin Homepage"
 msgstr ""
 
 # siteinfo.php:924
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:944
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:940
 msgid "Support Forum"
 msgstr ""
 
 # siteinfo.php:925
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:945
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:941
 msgid "Report Bug"
 msgstr ""
 
 # siteinfo.php:928
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:949
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:945
 msgid "SiteInfo Resources:"
 msgstr ""
 
 # siteinfo.php:929
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:951
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:947
 msgid "A9 Developer Blog"
 msgstr ""
 
 # siteinfo.php:930
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:952
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:948
 msgid "A9 SiteInfo Website"
 msgstr ""
 
 # siteinfo.php:934
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:954
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:950
 msgid "SiteInfo for Firefox"
 msgstr ""
 
 # siteinfo.php:935
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:955
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:951
 msgid "Full A9 Toolbar"
 msgstr ""
 
 # siteinfo.php:936
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:959
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:955
 msgid "Donations:"
 msgstr ""
 
 # siteinfo.php:943
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:965
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:961
 msgid "Hide this list"
 msgstr ""
 
 # siteinfo.php:888
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:975
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:971
 msgid "Status"
 msgstr ""
 
 # siteinfo.php:898
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:980
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:976
 msgid "The plugin is using <b>mod_rewrite</b>"
 msgstr ""
 
 # siteinfo.php:899
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:981
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:977
 msgid "The plugin is using <b>a static file</b>"
 msgstr ""
 
 # siteinfo.php:901
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:983
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:979
 #, php-format
 msgid "The URL of your SiteInfo file is %s"
 msgstr ""
 
 # siteinfo.php:904
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:986
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:982
 #, php-format
 msgid "The path to your SiteInfo file is %s"
 msgstr ""
 
 # siteinfo.php:907
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:989
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:985
 #, php-format
 msgid "Your SiteInfo was rebuilt on %s"
 msgstr ""
 
 # siteinfo.php:909
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:991
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:987
 msgid "File status:"
 msgstr ""
 
 # siteinfo.php:912
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:994
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:990
 #, php-format
 msgid "Please delete the <abbr title=\"%s\">"
 msgstr ""
 
 # siteinfo.php:912
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:994
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:990
 msgid "</abbr> file if you want to use mod_rewrite."
 msgstr ""
 
 # siteinfo.php:966
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1004
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1000
 msgid "Basic Options"
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1009
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1005
 msgid "Full path to the domain root"
 msgstr ""
 
 # siteinfo.php:980
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1009
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1005
 msgid "Verify path"
 msgstr ""
 
 # siteinfo.php:980
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1009
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1005
 msgid "Autodetect"
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1010
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1006
 msgid "Full URL to the domain root"
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1016
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1012
 msgid "Your server does not support mod_rewrite so this plugin will generate a static file every time you publish a post. Please specify the path to your domain root below."
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1018
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1014
 msgid "Your blog is not located in your domain root so this plugin will generate a static file every time you publish a post. Please specify the path to your domain root below."
 msgstr ""
 
 # siteinfo.php:975
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1023
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1019
 msgid "Use mod_rewrite to generate the SiteInfo file"
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1035
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1031
 msgid "WebMenu Content"
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1038
-msgid "Please choose what you want to include in your WebMenu. <b>Note that you need to close and reopen your browser to see the changes because the A9 Toolbar reads the file only once per session.</b>"
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1034
+msgid "Please choose what you want to include in your WebMenu:"
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1043
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1039
 msgid "Pages"
 msgstr ""
 
 # siteinfo.php:987
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1052
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1048
 msgid "Update options"
 msgstr ""
 
 # siteinfo.php:826
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1168
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1164
 msgid "Sending Data..."
 msgstr ""
 
 # siteinfo.php:831
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1173
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1169
 msgid "Data Sent..."
 msgstr ""
 
 # siteinfo.php:836
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1178
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1174
 msgid "Processing Request..."
 msgstr ""
 
 # C:\Programme\Apache
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1199
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1195
 msgid "Done."
 msgstr ""
 
 # siteinfo.php:873
-#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1211
+#: Group\Apache2\htdocs\wp_svn\wp-content\plugins\siteinfo/siteinfo.php:1207
 msgid "Empty directory"
 msgstr ""
 
