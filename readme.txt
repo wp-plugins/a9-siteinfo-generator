@@ -11,8 +11,7 @@ This plugin will create a SiteInfo menu for your blog.
 
 SiteInfo is an open standard which allows you to specify information that will be displayed in a toolbar menu. This allows the A9 toolbar (or other toolbars that want to use SiteInfo) to display a menu about your site, when a user is on your site.
 
-> THE SITEINFO FORMAT HAS BEEN CANCELED BY A9. THIS PLUGIN IS NOT SUPPORTED ANYMORE!
->   
+**THE SITEINFO FORMAT HAS BEEN CANCELED BY A9. THIS PLUGIN IS NOT SUPPORTED ANYMORE!**
 
 == Installation ==
 
